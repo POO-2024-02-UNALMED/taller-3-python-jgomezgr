@@ -1,4 +1,4 @@
-class Control:
+class Control: #1
     _tv = None
 
     def enlazar(self, tv):
@@ -18,22 +18,22 @@ class Control:
         self._tv.turnOff()
 
     def canalUp(self) -> None:
-        self._canal.canalUp()
+        self._tv.canalUp()
     
     def canalDown(self) -> None:
-        self._canal.canalDown()
+        self._tv.canalDown()
 
     def volumenUp(self) -> None:
-        self._volumen.volumenUp()
+        self._tv.volumenUp()
 
     def volumenDown(self) -> None:
-        self._volumen.volumenDown()
+        self._tv.volumenDown()
 
-    def setCanal(self, canal= int) -> None:
-        self._canal.setCanal(canal)
+    def setCanal(self, canal: int) -> None:
+        self._tv.setCanal(canal)
 
-    def setVolumen(self, volumen = int) -> None:
-        self._volumen.setVolumen(volumen)
+    def setVolumen(self, volumen: int) -> None:
+        self._tv.setVolumen(volumen)
 
     
         
